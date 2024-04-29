@@ -4,6 +4,26 @@
     --color-logo-title: #FC871A;
 }
 
+body{
+    background-color: var(--color-main-backg);
+}
+
+.flex{
+    display: flex;
+}
+
 #cadastro{
-    
+    background-color: var(--color-main-contrast);
+    text-decoration: none;
+    color: var(--color-main-backg);
+    font-size: large;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#entrar{
+    color: var(--color-main-contrast);
+    font-size: large;
+    padding: 5px 10px;
+    text-decoration: none;
 }
