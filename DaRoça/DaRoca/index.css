@@ -6,10 +6,31 @@
 
 body{
     background-color: var(--color-main-backg);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .flex{
     display: flex;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.gap{
+    gap: 5px;
+}
+
+#search-bar{
+    background-color: var(--color-main-contrast);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#search-bar a{
+    color: var(--color-main-backg);
+    text-decoration: none;
 }
 
 #cadastro{
@@ -21,7 +42,7 @@ body{
     border-radius: 5px;
 }
 
-#entrar{
+.entrar{
     color: var(--color-main-contrast);
     font-size: large;
     padding: 5px 10px;
