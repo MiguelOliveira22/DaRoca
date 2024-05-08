@@ -23,17 +23,6 @@ body{
     gap: 5px;
 }
 
-#search-bar{
-    background-color: var(--color-main-contrast);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-#search-bar a{
-    color: var(--color-main-backg);
-    text-decoration: none;
-}
-
 .cadastro{
     background-color: var(--color-main-contrast);
     text-decoration: none;
