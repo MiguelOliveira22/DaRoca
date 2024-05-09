@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
             </div>
             <div>
                 <label>CPF</label>
-                <input type="text" placeholder="000.000.000-00" class="input">
+                <input id="cpf" type="text" placeholder="000.000.000-00" class="input" onchange="checkcpf()">
             </div>
         </form>
     </div>
