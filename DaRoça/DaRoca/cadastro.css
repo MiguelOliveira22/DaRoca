@@ -23,6 +23,18 @@ input{
     flex-direction: row;
 }
 
+.leftjust{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+#iscpf{
+    width: 25px;
+    height: 25px;
+}
+
 .input{
     width: 100%;
     height: 50px;

@@ -28,8 +28,11 @@
             </div>
             <div>
                 <label>CPF</label>
-                <input id="cpf" type="text" placeholder="00000000000 (Sem Caracteres Especiais)" class="input" onchange="checkcpf()">
-                <--EM TEORIA, ADICIONAR O RESTO DAS TRALHAS DE CONFIRMACAO CPF-->
+                <input id="cpf" type="text" placeholder="00000000000 (Sem Caracteres Especiais)" class="input" onchange="isActive()">
+                <div class="flex leftjust">
+                    <img src="images/incomplete.svg" alt="" id="iscpf">
+                    <span id="erro">O CPF Não Está Completo</span>
+                </div>
             </div>
             <div>
                 Já Tem Uma Conta? <a href="entrar.html" class="entrar">Entre Aqui</a>

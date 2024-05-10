@@ -51,17 +51,16 @@ function checkcpf(){
 
 function isActive()
 {
-    let a = checkcpf();
-    if(a == 1){
-        document.querySelector("#...").src = "true.jpg";
-        document.querySelector("#....").innerText = "CPF Valido";
+    if(checkcpf() == 1){
+        document.querySelector("#iscpf").src = "images/true.svg";
+        document.querySelector("#erro").innerText = "CPF Valido";
     }
-    if(a == 2){
-        document.querySelector("#...").src = "incomplete.jpg";
-        document.querySelector("#....").innerText = "O CPF Não Está Completo";
+    else if(checkcpf() == 2){
+        document.querySelector("#iscpf").src = "images/incomplete.svg";
+        document.querySelector("#erro").innerText = "O CPF Não Está Completo";
     }
-    else{
-        document.querySelector("#...").src = "wrong.jpg";
-        document.querySelector("#....").innerText = "CPF Invalido";
+    else if(checkcpf() == 0){
+        document.querySelector("#iscpf").src = "images/wrong.svg";
+        document.querySelector("#erro").innerText = "CPF Invalido";
     }
 }
