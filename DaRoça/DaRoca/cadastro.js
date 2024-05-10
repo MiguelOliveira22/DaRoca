@@ -1,7 +1,7 @@
 function checkcpf(){
     let a = document.querySelector('#cpf').value;
     if(a.length != 11){
-        console.log("Tamanho Insuficiente")
+        console.log("Tamanho Errado")
         return 2;
     }
 
@@ -49,4 +49,19 @@ function checkcpf(){
     return 1;
 }
 
-checkcpf()
+function isActive()
+{
+    let a = checkcpf();
+    if(a == 1){
+        document.querySelector("#...").src = "true.jpg";
+        document.querySelector("#....").innerText = "CPF Valido";
+    }
+    if(a == 2){
+        document.querySelector("#...").src = "incomplete.jpg";
+        document.querySelector("#....").innerText = "O CPF Não Está Completo";
+    }
+    else{
+        document.querySelector("#...").src = "wrong.jpg";
+        document.querySelector("#....").innerText = "CPF Invalido";
+    }
+}
