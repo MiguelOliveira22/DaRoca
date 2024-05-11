@@ -1,43 +1,96 @@
 :root{
     --color-main-backg: #1C4236;
+    --color-main-footer: #122E25;
     --color-main-contrast: #FFFCE2;
     --color-logo-title: #FC871A;
     --color-enter-link: #99d4ad;
 }
 
 body{
+    margin: 0px;
     background-color: var(--color-main-backg);
     color: var(--color-main-contrast);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    font-size: larger;
+}
+
+footer{
+    padding: 10px;
+    background-color: var(--color-main-footer);
+    color: var(--color-enter-link);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: medium;
 }
 
 .flex{
     display: flex;
 }
 
+.flexchild{
+    padding: 30px;
+}
+
+.flexchild p{
+    font-size: x-large
+}
+
+.centralize{
+    align-items: center;
+}
+
 .between{
     justify-content: space-between;
 }
 
+.around{
+    justify-content: space-around;
+}
+
 .gap{
     gap: 5px;
+    padding: 5px;
 }
 
 .cadastro{
     background-color: var(--color-main-contrast);
     text-decoration: none;
     color: var(--color-main-backg);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 25px;
 }
 
 .entrar{
-    color: var(--color-main-contrast);
-    padding: 5px 10px;
+    color: var(--color-enter-link);
+    padding: 10px 15px;
     text-decoration: none;
 }
 
 .big{
     font-size: large;
+}
+
+.biggap{
+    padding: 5px 15px;
+    gap: 70px;
+}
+
+.contrast{
+    background-color: var(--color-main-contrast);
+    color: var(--color-main-backg);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#img1{
+    width: 400px;
+}
+
+#logo{
+    padding: 10px;
+}
+
+#selector{
+    padding: 10px;
 }
