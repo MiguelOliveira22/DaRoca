@@ -1,15 +1,18 @@
 :root{
     --color-main-backg: #1C4236;
+    --color-main-footer: #122E25;
     --color-main-contrast: #FFFCE2;
     --color-logo-title: #FC871A;
     --color-enter-link: #99d4ad;
 }
 
 body{
+    margin: 0px;
     background-color: var(--color-main-backg);
     color: var(--color-main-contrast);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    font-size: larger;
 }
 
 input{

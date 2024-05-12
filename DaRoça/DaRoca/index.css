@@ -16,7 +16,7 @@ body{
 }
 
 footer{
-    padding: 10px;
+    padding: 20px 20px 10px 20px;
     background-color: var(--color-main-footer);
     color: var(--color-enter-link);
     font-family: "Poppins", sans-serif;
@@ -26,6 +26,10 @@ footer{
 
 .flex{
     display: flex;
+}
+
+.down{
+    flex-direction: column;
 }
 
 .flexchild{
@@ -67,6 +71,11 @@ footer{
     text-decoration: none;
 }
 
+.nodeco{
+    text-decoration: none;
+    color: var(--color-enter-link);
+}
+
 .big{
     font-size: large;
 }
@@ -76,11 +85,33 @@ footer{
     gap: 70px;
 }
 
+.mediumgap{
+    gap: 30px;
+}
+
+.pad{
+    padding: 7px 5px 0px 0px;
+}
+
 .contrast{
     background-color: var(--color-main-contrast);
     color: var(--color-main-backg);
     margin: 10px;
     border-radius: 15px;
+}
+
+.searcher{
+    border: 1px black solid;
+    border-radius: 15px;
+}
+
+.bottom{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.grid{
+    display: grid;
 }
 
 #img1{
