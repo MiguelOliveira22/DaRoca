@@ -113,3 +113,9 @@ footer{
 #price{
     font-size: smaller;
 }
+
+#logo{
+    text-decoration: none;
+    color: var(--color-logo-title);
+    padding: 10px;
+}

@@ -2,6 +2,7 @@
     --color-main-backg: #1C4236;
     --color-main-footer: #122E25;
     --color-main-contrast: #FFFCE2;
+    --color-main-chip: #ECE282;
     --color-logo-title: #FC871A;
     --color-enter-link: #99d4ad;
 }
@@ -40,8 +41,28 @@ footer{
     font-size: x-large
 }
 
+.prod{
+    background-color: var(--color-main-chip);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.color{
+    background-color: var(--color-main-backg);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.allsize{
+    width: 95%;
+}
+
 .centralize{
     align-items: center;
+}
+
+.centralizenormal{
+    justify-content: center;
 }
 
 .between{
@@ -69,6 +90,11 @@ footer{
     color: var(--color-enter-link);
     padding: 10px 15px;
     text-decoration: none;
+}
+
+.nodecoration{
+    text-decoration: none;
+    color: var(--color-main-backg);
 }
 
 .nodeco{
@@ -114,14 +140,30 @@ footer{
     display: grid;
 }
 
+.small{
+    font-size: small;
+    margin: 0px;
+    padding: 0px;
+}
+
+.smallname{
+    margin: 0px;
+    padding: 0px;
+}
+
 #img1{
     width: 400px;
+}
+
+#selector{
+    padding: 10px;
 }
 
 #logo{
     padding: 10px;
 }
 
-#selector{
-    padding: 10px;
+#logo-image{
+    text-decoration: none;
+    color: var(--color-logo-title);
 }
