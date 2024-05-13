@@ -24,6 +24,14 @@ footer{
     font-size: medium;
 }
 
+.centralize{
+    align-items: center;
+}
+
+.centralizenormal{
+    justify-content: center;
+}
+
 .nodeco{
     text-decoration: none;
     color: var(--color-enter-link)
@@ -59,13 +67,6 @@ footer{
     font-size: large;
 }
 
-.searcher{
-    height: 30px;
-    width: 500px;
-    border: 1px black solid;
-    border-radius: 15px;
-}
-
 .between{
     justify-content: space-between;
 }
@@ -99,15 +100,76 @@ footer{
     padding: 7px 5px 0px 0px;
 }
 
-.special{
+.color{
+    color: var(--color-main-backg);
+}
+
+.newpad{
+    padding: 3px 5px;
+}
+
+.bigpad{
     padding: 10px;
+}
+
+.padders{
+    padding: 10px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+.special{
     border-radius: 25px;
     background-color: var(--color-main-backg);
 }
 
-#info h3, #info small, #info span{
-    padding: 0px;
+.nomargin{
     margin: 0px;
+}
+
+.background{
+    background-color: var(--color-enter-link);
+    border-radius: 25px;
+}
+
+.marginagain{
+    margin: 0px 0px 0px 10px;
+}
+
+.marginall{
+    margin: 10px;
+}
+
+.long{
+    width: 600px;
+    background-color: var(--color-main-contrast);
+}
+
+.destaque{
+    background-color: var(--color-enter-link);
+}
+
+.smallball{
+    border-radius: 100%;
+    height: 30px;
+    width:30px;
+    background-color: var(--color-main-footer);
+}
+
+.space{
+    padding: 0px 0px 0px 5px;
+}
+
+.margin{
+    margin: 0px 0px 0px 40px;
+    padding: 10px;
+}
+
+.input{
+    border: 0px;
+    border-radius: 25px;
+    padding: 10px;
+    height: 40px;
+    color: var(--color-main-backg);
 }
 
 #price{

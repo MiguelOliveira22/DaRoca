@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="product.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,10 +16,10 @@
             <div class="flex" id="">
                 <a href="index.html"><img src="logo.svg" alt="Logo DaRoça" id="logo"></a>
             </div>
-            <div class="flex gap">
-                <form id="searcher-bar" action="search.html">
-                    <input type="search" class="searcher" id="barra">
-                    <input type="submit" class="searcher">
+            <div class="flex centralizenormal centralize gap" id="barra">
+                <form action="search.html">
+                    <input type="search" class="input long" placeholder="Pesquise Por Nossos Produtos">
+                    <input type="submit" class="input destaque" value="Pesquise">
                 </form>
             </div>
             <div class="flex gap">
@@ -28,19 +27,50 @@
                 <a href="entrar.html" class="entrar nodeco">Entrar</a>
             </div>
         </div>
-        <div class="flex contrast">
+        <div class="flex gap contrast">
             <div id="image">
                 <img src="images/banana.png" alt="Banana" width="400px" height="400px">
             </div>
             <div id="info">
-                <h1>Nome Produto</h1>
-                <div>R$40.00 <div id="price">1 Uni.</div></div>
-                <div>
-                    <a href="#adicionar" class="nodeco special">Adicionar À Sua Cesta</a>
+                <h1 class="nomargin">Nome Produto</h1>
+                <p class="nomargin">R$24.00 <small id="price" class="nomargin">per unit</small></p>
+                <div class="gap">
+                    <div>
+                        <span>Categorias</span>
+                        <span class="nodeco newpad color background">Frutas</span>
+                        <span class="nodeco newpad color background">Docês</span>
+                        <span class="nodeco newpad color background">Mais Comprados</span>
+                    </div>
+                </div>
+                <div class="padders">
+                    <a href="#adicionar" class="nodeco special newpad">Adicionar À Sua Cesta</a>
                 </div>
             </div>
             <div id="comentarios">
-                <div class="contrast"></div>
+                <div class="background marginall">
+                    <div class="contrast background flex marginagain">
+                        <div class="smallball"></div><p class="nomargin space">Nome</p>
+                    </div>
+                    <div class="margin">
+                        <p class="nomargin">Os produtos vieram muito bem embalados! Valeu os 24 reais de cada banana, centavo por centavo.</p>
+                    </div>
+                </div>
+                <div class="background marginall">
+                    <div class="contrast background flex marginagain">
+                        <div class="smallball"></div><p class="nomargin space">Nome</p>
+                    </div>
+                    <div class="margin">
+                        <p class="nomargin">Os produtos vieram muito bem embalados! Valeu os 24 reais de cada banana, centavo por centavo.</p>
+                    </div>
+                </div>
+                <div class="background marginall">
+                    <div class="contrast background flex marginagain">
+                        <div class="smallball"></div><p class="nomargin space">Nome</p>
+                    </div>
+                    <div class="margin">
+                        <p class="nomargin">Os produtos vieram muito bem embalados! Valeu os 24 reais de cada banana, centavo por centavo.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>

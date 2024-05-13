@@ -33,6 +33,15 @@ footer{
     flex-direction: column;
 }
 
+.input{
+    border: 0px;
+    border-radius: 25px;
+    padding: 10px;
+    height: 40px;
+    color: var(--color-main-backg);
+    background-color: var(--color-main-contrast);
+}
+
 .flexchild{
     padding: 30px;
 }
@@ -55,6 +64,18 @@ footer{
 
 .allsize{
     width: 95%;
+}
+
+.nomargin{
+    margin: 0px;
+}
+
+.side{
+    align-self: flex-start;
+}
+
+.padding{
+    padding: 0px 50px;
 }
 
 .centralize{
@@ -151,6 +172,14 @@ footer{
     padding: 0px;
 }
 
+.long{
+    width: 600px;
+}
+
+.destaque{
+    background-color: var(--color-enter-link);
+}
+
 #img1{
     width: 400px;
 }
@@ -166,4 +195,8 @@ footer{
 #logo-image{
     text-decoration: none;
     color: var(--color-logo-title);
+}
+
+#barra{
+    width: 70%
 }
