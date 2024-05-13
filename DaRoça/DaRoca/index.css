@@ -107,6 +107,14 @@ footer{
     border-radius: 25px;
 }
 
+.cadastroanother{
+    background-color: var(--color-main-chip);
+    text-decoration: none;
+    color: var(--color-main-backg);
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
 .entrar{
     color: var(--color-enter-link);
     padding: 10px 15px;
