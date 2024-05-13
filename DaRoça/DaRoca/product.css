@@ -24,6 +24,10 @@ footer{
     font-size: medium;
 }
 
+.unbreakeable{
+    display: inline-block;
+}
+
 .centralize{
     align-items: center;
 }
