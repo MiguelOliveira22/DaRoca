@@ -123,6 +123,10 @@ footer{
     -moz-appearance: textfield;
 }
 
+.bigpaddingtop{
+    height: 100px;
+}
+
 .destaque{
     background-color: var(--color-enter-link);
 }

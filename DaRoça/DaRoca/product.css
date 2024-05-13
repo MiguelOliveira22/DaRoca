@@ -37,6 +37,10 @@ footer{
     color: var(--color-enter-link)
 }
 
+.bigpaddingtop{
+    height: 150px;
+}
+
 .gap{
     gap: 5px;
 }
