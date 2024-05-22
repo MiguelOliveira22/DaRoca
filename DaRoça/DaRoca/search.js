@@ -13,22 +13,26 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     document.querySelector("#querymain").value = returner;
 
-        //Load Page Contents
-        /*                     
-        <a href="product.html" class="nodecoration">
-            <div class="prod">
-                <div class="flex centralizenormal">
-                    <img src="images/banana.png" alt="" height="160" width="160">
-                </div>
-                <h3 class="smallname">Name Product</h3>
-                <p class="small">R$ 24.00 <small class="small">per unit</small></p>
-            </div>
-        </a>
-        */
-    
     const nProducts = 6;
-    let file = getInfo()
-    let product = JSON.parse(file)
+    let product = [
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"}
+    ]
     for(let j = 0; j < nProducts; j ++){
         if(true){
             let creator = document.createElement("a");
@@ -71,9 +75,3 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 }, false)
-
-async function getInfo(){
-    let a = await fetch("products.json");
-    let b = await a.json();
-    return b;
-}

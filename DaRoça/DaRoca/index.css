@@ -37,9 +37,13 @@ footer{
     border: 0px;
     border-radius: 25px;
     padding: 10px;
-    height: 40px;
     color: var(--color-main-backg);
     background-color: var(--color-main-contrast);
+    outline: none;
+}
+
+.searchfield{
+    flex-grow: 2;
 }
 
 .flexchild{
