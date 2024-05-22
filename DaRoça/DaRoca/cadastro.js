@@ -47,6 +47,8 @@ function checkcpf(){
 
     console.log("Verdade");
     return 1;
+
+    rsa
 }
 
 function isActive()
