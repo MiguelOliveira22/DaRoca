@@ -27,10 +27,12 @@ document.addEventListener("DOMContentLoaded", function(){
         */
     
     const nProducts = 6;
+    let file = getInfo()
+    let product = JSON.parse(file)
     for(let j = 0; j < nProducts; j ++){
-        if(true){ // product in returner
+        if(true){
             let creator = document.createElement("a");
-            creator.href = "product.html" // product.url;
+            creator.href = product[j].url;
             creator.id = "b" + j
             creator.className = "nodecoration";
             document.querySelector("#main-content").appendChild(creator);
@@ -48,24 +50,30 @@ document.addEventListener("DOMContentLoaded", function(){
             creator = document.createElement("img");
             creator.style.width = "160px";
             creator.style.Height = "160px";
-            creator.src = "images/banana.png" // product.img;
+            creator.src = product[j].img;
             document.querySelector("#e" + j).appendChild(creator);
 
             creator = document.createElement("h3");
             creator.className = "smallname";
-            creator.innerHTML = "Name Prod" // product.name;
+            creator.innerHTML = product[j].name;
             document.querySelector("#d" + j).appendChild(creator);
 
             creator = document.createElement("p");
             creator.className = "small";
-            creator.innerHTML = "$24 " // product.value + " ";
+            creator.innerHTML = product[j].value + " ";
             creator.id = "p" + j
             document.querySelector("#d" + j).appendChild(creator);
 
             creator = document.createElement("small");
             creator.className = "small";
-            creator.innerHTML = "per unit" // product.unit;
+            creator.innerHTML = product[j].unit;
             document.querySelector("#p" + j).appendChild(creator);
         }
     }
 }, false)
+
+async function getInfo(){
+    let a = await fetch("products.json");
+    let b = await a.json();
+    return b;
+}
