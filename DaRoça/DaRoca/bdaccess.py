@@ -1,4 +1,5 @@
 import pyodbc as bd
+import getpass as pswd
 
 def main():
     Acesso = bd.connect(
@@ -6,7 +7,7 @@ def main():
         server = "regulus.cotuca.unicamp.br",
         database = "BD24143",
         uid = "BD24143",
-        pwd = "..."
+        pwd = pswd.getpass("Senha: ")
     )
     Cursor = Acesso.cursor()
     Cursor.execute()

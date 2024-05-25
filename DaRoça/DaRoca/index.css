@@ -42,8 +42,12 @@ footer{
     outline: none;
 }
 
-.searchfield{
+.biggersize{
     flex-grow: 2;
+}
+
+.searchfield{
+    width: 150%;
 }
 
 .flexchild{
