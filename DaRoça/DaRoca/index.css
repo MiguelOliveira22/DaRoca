@@ -33,6 +33,14 @@ footer{
     font-size: medium;
 }
 
+.rows{
+    flex-direction: row;
+}
+
+.spaceseparator{
+    gap: 10px;
+}
+
 .cadastro{
     background-color: var(--color-main-contrast);
     text-decoration: none;

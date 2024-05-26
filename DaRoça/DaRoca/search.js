@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     document.querySelector("#querymain").value = returner;
 
-    const nProducts = 6;
     let product = [
         {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
         {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
@@ -31,15 +30,31 @@ document.addEventListener("DOMContentLoaded", function(){
         {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
         {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
         {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
-        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"}
+        {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"},
+        {"name": "Morango", "url": "banana-prata", "img": "./images/banana.png", "value": "R$2340.00", "unit": "per unit"}
     ]
+    let nProducts = product.length;
+    let k = 0;
+    let l = 0;
     for(let j = 0; j < nProducts; j ++){
-        if(true){
+        if(k == 0){
+            let creator = document.createElement("div");
+            creator.id = "div" + l
+            creator.className = "flex around rows";
+            document.querySelector("#main-content").appendChild(creator);
+            l ++;
+        }
+        k ++;
+        if(k == 6){
+            k = 0;
+        }
+
+        if(product[j].name.includes(returner)){
             let creator = document.createElement("a");
             creator.href = product[j].url;
             creator.id = "b" + j
             creator.className = "nodecoration";
-            document.querySelector("#main-content").appendChild(creator);
+            document.querySelector("#div" + (l - 1)).appendChild(creator);
 
             creator = document.createElement("div");
             creator.className = "prod";
@@ -73,5 +88,6 @@ document.addEventListener("DOMContentLoaded", function(){
             creator.innerHTML = product[j].unit;
             document.querySelector("#p" + j).appendChild(creator);
         }
+
     }
 }, false)
