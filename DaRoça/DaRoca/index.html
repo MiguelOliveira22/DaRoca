@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js"></script>
     <title>DaRoça</title>
 </head>
 <body>
@@ -17,16 +18,12 @@
             <div class="flex gap centralize" id="logo">
                 <a href="index.html"><img src="images/logo.png" alt="Logo DaRoça" id="logo-image" height="100"></a>
             </div>
-            <div class="flex centralizenormal centralize biggersize">
-                <div class="flex input centralize">
-                    <div class="flex">
-                        <form action="search.html" class="searchfield">
-                            <input type="search" role="combobox" placeholder="Pesquise Por Nossos Produtos" class="input" name="query" id="querymain">
-                        </form>
-                    </div>
-                    <div class="material-symbols-rounded flex centralizenormal" onclick="">
-                        search
-                    </div>
+            <div class="flex searchfield bigsize centralized justcentralized">
+                <form action="search.html" class="bigbar flex" id="main-query" name="main-query">
+                    <input type="text" role="combobox" placeholder="Pesquise Por Nossos Produtos" class="input bigbar" name="query" id="querymain">
+                </form>
+                <div class="material-symbols-rounded flex input centralized" onclick="Search()" id="search-btn">
+                    search
                 </div>
             </div>
             <div class="flex gap centralize" id="selector">

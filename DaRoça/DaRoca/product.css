@@ -172,14 +172,6 @@ footer{
     padding: 10px;
 }
 
-.input{
-    border: 0px;
-    border-radius: 25px;
-    padding: 10px;
-    height: 40px;
-    color: var(--color-main-backg);
-}
-
 #price{
     font-size: smaller;
 }
@@ -188,4 +180,73 @@ footer{
     text-decoration: none;
     color: var(--color-logo-title);
     padding: 10px;
+}
+
+.centralized{
+    align-content: center;
+}
+
+.justcentralized{
+    justify-content: center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.input{
+    border: 0px;
+    color: var(--color-main-backg);
+    background-color: var(--color-main-contrast);
+    outline: none;
+}
+
+.searchfield{
+    margin: auto;
+    background-color: var(--color-main-contrast);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.bigsize{
+    flex-shrink: 0;
+    flex-basis: 50%;
+    height: 50%;
+}
+
+.bigbar{
+    width: 100%;
+}
+
+.down{
+    flex-direction: column;
+}
+
+.mediumgap{
+    gap: 30px;
+}
+
+.pad{
+    padding: 7px 5px 0px 0px;
+}
+
+.grid{
+    display: grid;
+}
+
+.bottom{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.big{
+    font-size: large;
+}
+
+#search-btn:hover{
+    cursor: pointer;
+}
+
+#search-btn{
+    user-select: none;
 }
