@@ -1,5 +1,14 @@
 [
-    {"name": "Banana", "url": "banana-prata", "img": "../images/banana.png", "value": "R$2340.00", "unit": "per unit"},
-    {"name": "Banana", "url": "banana-prata", "img": "../images/banana.png", "value": "R$2340.00", "unit": "per unit"},
-    {"name": "Banana", "url": "banana-prata", "img": "../images/banana.png", "value": "R$2340.00", "unit": "per unit"}
+    {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per kg"},
+    {"name": "Morango", "url": "morango", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Laranja", "url": "laranja", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Mirtilo", "url": "mirtilo", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Abacaxi", "url": "abacaxi", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Amora", "url": "amora", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Alface", "url": "alface", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Pimentão Verde", "url": "pimentao-verde", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Cebola", "url": "cebola", "img": "./images/banana.png", "categorias": "Hortaliças Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Tomate", "url": "tomate", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Brócolis", "url": "brocolis", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"},
+    {"name": "Cabeça de Alho", "url": "alho-cabeca", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit"}
 ]
