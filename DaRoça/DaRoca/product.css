@@ -182,6 +182,19 @@ footer{
     padding: 10px;
 }
 
+#image-main{
+    width: 400px;
+    height: 400px;
+}
+
+.marginleft{
+    margin-left: 5px;
+}
+
+.paddown{
+    padding-bottom: 5px;
+}
+
 .centralized{
     align-content: center;
 }
