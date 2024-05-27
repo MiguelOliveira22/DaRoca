@@ -1,4 +1,4 @@
-function call(){
+function call(categsstrings){
     fetch("products.json").then(data => {
         return data.json();
     })
@@ -19,7 +19,7 @@ function call(){
         let nProducts = product.length;
         let k = 0;
         let l = 0;
-        let isContent;
+        let isContent = 0;
         for(let j = 0; j < nProducts; j ++){
             if(k == 0){
                 let creator = document.createElement("div");
@@ -32,7 +32,7 @@ function call(){
 
             let string = product[j].name.toLowerCase();
 
-            if(string.includes(returner)){
+            if(string.includes(returner) && categoryIn(categsstrings, product[j])){
                 let creator = document.createElement("a");
                 creator.href = "product.html?prod=" + product[j].url;
                 creator.id = "b" + j
@@ -104,6 +104,42 @@ function call(){
             document.querySelector("#div0").appendChild(creator);
         }
     })
+}
+
+function callCategs(){
+    document.querySelector("#main-content").childNodes.forEach(element => {
+        document.querySelector("#main-content").removeChild(element)
+    });
+
+    let categorysave = [];
+    let i = 0;
+    document.querySelector("#categs").childNodes.forEach(element => {
+        if(element.checked){
+            categorysave.push(element.value);
+            i ++;
+        };
+    });
+    
+    for(let j = 0; j < categorysave.length; j ++){
+        console.log(categorysave);
+    }
+
+    call(categorysave)
+}
+
+function categoryIn(categories, compare){
+    let categoriasUsada = compare.categorias.split(" ");
+    if(categories.length == 0){
+        return true;
+    }
+    for(let i = 0; i < categories.length; i ++){
+        for(let j = 0; j < categoriasUsada.length; j ++){
+            if(categories[i] == categoriesUsada[j]){
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 document.addEventListener("DOMContentLoaded", document => call(), false)
