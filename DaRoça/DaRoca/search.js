@@ -19,7 +19,7 @@ function call(){
         let nProducts = product.length;
         let k = 0;
         let l = 0;
-        let isContent
+        let isContent;
         for(let j = 0; j < nProducts; j ++){
             if(k == 0){
                 let creator = document.createElement("div");
@@ -30,7 +30,9 @@ function call(){
                 k ++;
             }
 
-            if(product[j].name.includes(returner)){
+            let string = product[j].name.toLowerCase();
+
+            if(string.includes(returner)){
                 let creator = document.createElement("a");
                 creator.href = "product.html?prod=" + product[j].url;
                 creator.id = "b" + j

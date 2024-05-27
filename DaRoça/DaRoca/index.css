@@ -145,12 +145,24 @@ footer{
     user-select: none;
 }
 
+#categs-search:hover{
+    cursor: pointer;
+}
+
+#categs-search{
+    user-select: none;
+}
+
 #selector{
     padding: 10px;
 }
 
 .flexchild{
     padding: 30px;
+}
+
+.end{
+    justify-self: flex-end;
 }
 
 .flexchild p{
@@ -161,6 +173,10 @@ footer{
     background-color: var(--color-main-chip);
     padding: 10px;
     border-radius: 15px;
+}
+
+.bigpaddingtop{
+    height: 170px;
 }
 
 .color{
