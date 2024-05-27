@@ -57,10 +57,7 @@ function call(){
         creator.className = "nomargin";
         creator.innerHTML = inUse.descriptor;
         document.querySelector("#descript-container").appendChild(creator);
-    });
-
-    // image-main
-    
+    });    
 }
 
 document.addEventListener("DOMContentLoaded", call(), false)

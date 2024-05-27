@@ -77,12 +77,12 @@ function call(){
             }
         }
 
-        while(k <= 6 && k != 0){
+        while((k <= 6 && k != 0) && isContent){
             let creator = document.createElement("div");
             creator.className = "nodecoration flex flex-root";
             document.querySelector("#div" + (l - 1)).appendChild(creator);
 
-            k++
+            k++;
         }
 
         if(!isContent){
