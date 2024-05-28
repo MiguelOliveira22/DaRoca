@@ -1,4 +1,4 @@
-function call(categsstrings){
+function call(categstrings){
     fetch("products.json").then(data => {
         return data.json();
     })
@@ -32,7 +32,7 @@ function call(categsstrings){
 
             let string = product[j].name.toLowerCase();
 
-            if(string.includes(returner) && categoryIn(categsstrings, product[j])){
+            if(string.includes(returner.toLowerCase()) && categoryIn(categstrings, product[j])){
                 let creator = document.createElement("a");
                 creator.href = "product.html?prod=" + product[j].url;
                 creator.id = "b" + j
@@ -128,13 +128,17 @@ function callCategs(){
 }
 
 function categoryIn(categories, compare){
-    let categoriasUsada = compare.categorias.split(" ");
-    if(categories.length == 0){
+    if(categories == null){
         return true;
     }
+    else if(categories.length == 0){
+        return true;
+    }
+
+    let categoriasUsada = compare.categorias.split(" ");
     for(let i = 0; i < categories.length; i ++){
         for(let j = 0; j < categoriasUsada.length; j ++){
-            if(categories[i] == categoriesUsada[j]){
+            if(categories[i] == categoriasUsada[j]){
                 return true;
             }
         }
