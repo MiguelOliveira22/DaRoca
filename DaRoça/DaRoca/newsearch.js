@@ -68,7 +68,7 @@ function call(categstrings){
 
                 creator = document.createElement("small");
                 creator.className = "small";
-                creator.innerHTML = product[j].unit;
+                creator.innerHTML = "per kg";// product[j].unit
                 document.querySelector("#p" + j).appendChild(creator);
                 isContent = 1
                 k ++;
