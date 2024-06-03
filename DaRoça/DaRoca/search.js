@@ -1,5 +1,5 @@
 function call(categstrings){
-    fetch("products.json").then(data => {
+    fetch("http://localhost:3000/produtos").then(data => {
         return data.json();
     })
     .then(product => {
@@ -30,11 +30,11 @@ function call(categstrings){
                 k ++;
             }
 
-            let string = product[j].name.toLowerCase();
+            let string = product[j].nome.toLowerCase();
 
             if(string.includes(returner.toLowerCase()) && categoryIn(categstrings, product[j])){
                 let creator = document.createElement("a");
-                creator.href = "product.html?prod=" + product[j].url;
+                creator.href = "product.html?prod=" + product[j].id;
                 creator.id = "b" + j
                 creator.className = "nodecoration flex flex-root";
                 document.querySelector("#div" + (l - 1)).appendChild(creator);
@@ -52,23 +52,23 @@ function call(categstrings){
                 creator = document.createElement("img");
                 creator.style.width = "160px";
                 creator.style.Height = "160px";
-                creator.src = product[j].img;
+                creator.src = product[j].imagem;
                 document.querySelector("#e" + j).appendChild(creator);
 
                 creator = document.createElement("h3");
                 creator.className = "smallname";
-                creator.innerHTML = product[j].name;
+                creator.innerHTML = product[j].nome;
                 document.querySelector("#d" + j).appendChild(creator);
 
                 creator = document.createElement("p");
                 creator.className = "small";
-                creator.innerHTML = product[j].value + " ";
+                creator.innerHTML = "R$" + product[j].valor + " ";
                 creator.id = "p" + j
                 document.querySelector("#d" + j).appendChild(creator);
 
                 creator = document.createElement("small");
                 creator.className = "small";
-                creator.innerHTML = product[j].unit;
+                creator.innerHTML = "per kg";// product[j].unit
                 document.querySelector("#p" + j).appendChild(creator);
                 isContent = 1
                 k ++;
@@ -112,12 +112,10 @@ function callCategs(){
     });
 
     let categorysave = [];
-    let i = 0;
     document.querySelector("#categs").childNodes.forEach(element => {
         if(element.checked){
             categorysave.push(element.value);
-            i ++;
-        };
+        }
     });
     
     for(let j = 0; j < categorysave.length; j ++){
