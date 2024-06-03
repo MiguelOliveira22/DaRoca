@@ -13,6 +13,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: larger;
+    justify-content: space-between;
 }
 
 footer{
