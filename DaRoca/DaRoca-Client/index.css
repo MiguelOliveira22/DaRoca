@@ -84,6 +84,9 @@ a:hover{
     color: var(--color-main-backg);
     background-color: var(--color-main-contrast);
     outline: none;
+    font-family: inherit;
+    font-size: small;
+    line-height: normal;
 }
 
 .searchfield{

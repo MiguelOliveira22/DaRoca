@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="resourcesMain">
+    <file>resources/abort.bmp</file>
+    <file>resources/about.bmp</file>
+    <file>resources/Add.bmp</file>
+    <file>resources/CLOSE1.BMP</file>
+    <file>resources/COPY.BMP</file>
+    <file>resources/FIND.BMP</file>
+    <file>resources/first.bmp</file>
+    <file>resources/last.bmp</file>
+    <file>resources/Minus.bmp</file>
+    <file>resources/next.bmp</file>
+    <file>resources/Oeil2.bmp</file>
+    <file>resources/PRINTER5.BMP</file>
+    <file>resources/prior.bmp</file>
+    <file>resources/REDO.BMP</file>
+    <file>resources/Save.bmp</file>
+    <file>resources/UNDO.BMP</file>
+    <file>resources/WINNEXT.BMP</file>
+    <file>resources/WINPREV.BMP</file>
+  </qresource>
+</RCC>
