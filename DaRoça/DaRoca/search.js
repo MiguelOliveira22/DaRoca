@@ -34,7 +34,7 @@ function call(categstrings){
 
             if(string.includes(returner.toLowerCase()) && categoryIn(categstrings, product[j])){
                 let creator = document.createElement("a");
-                creator.href = "product.html?prod=" + product[j].id;
+                creator.href = "product.html/" + product[j].id;
                 creator.id = "b" + j
                 creator.className = "nodecoration flex flex-root";
                 document.querySelector("#div" + (l - 1)).appendChild(creator);
@@ -62,13 +62,13 @@ function call(categstrings){
 
                 creator = document.createElement("p");
                 creator.className = "small";
-                creator.innerHTML = "R$" + product[j].valor + " ";
+                creator.innerHTML = "R$" + product[j].valor.toFixed(2) + " ";
                 creator.id = "p" + j
                 document.querySelector("#d" + j).appendChild(creator);
 
                 creator = document.createElement("small");
                 creator.className = "small";
-                creator.innerHTML = "per kg";// product[j].unit
+                creator.innerHTML = product[j].unidade;
                 document.querySelector("#p" + j).appendChild(creator);
                 isContent = 1
                 k ++;
@@ -83,7 +83,6 @@ function call(categstrings){
             let creator = document.createElement("div");
             creator.className = "nodecoration flex flex-root";
             document.querySelector("#div" + (l - 1)).appendChild(creator);
-
             k++;
         }
 
