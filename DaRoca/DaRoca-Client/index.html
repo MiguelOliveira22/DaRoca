@@ -7,7 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="carrinho.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +28,10 @@
                 <div class="material-symbols-rounded flex input centralized" onclick="Search()" id="search-btn">
                     search
                 </div>
+            </div>
+            <div class="flex gap centralize" id="selector">
+                <a href="cadastro.html" class="cadastro big">Cadastro</a>
+                <a href="entrar.html" class="entrar big">Entrar</a>
             </div>
         </div>
         <div class="container">
@@ -88,116 +91,25 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <div class="flex gap centralize" id="selector">
-                <!--Open Btn-->
-        <button id="open_cart_btn">
-            <img src="images/carrinho-removebg-preview.png" alt="" style="width: 30px;" />
-        </button>
-        <!-- Backdrop -->
-        <div class="backdrop"></div>
-        <!-- Side Cart-->
-        <div id="sidecart" class="sidecart">
-            <div class="cart_content">
-                <!-- Cart Header-->
-                <div class="cart_header">
-                    <img src="images/carrinho-removebg-preview.png" alt="" style="width: 30px;"/>
-                    <div class="header_title">
-                        <h2>Seu Carrrinho</h2>
-                        <span id="items_num">4</span>
-                    </div>
-                <span id="close_btn" class="close_btn">&times;</span>
-                </div>
-                <!-- Cart Items-->
-                <div class="cart_items">
-                    <!-- Item-->
-                    <div class="cart_item">
-                        <div class="remove_items">
-                            <span>&times;</span>
-                        </div>
-                        <div class="item_img">
-                            <img src="images/banana.png">
-                        </div>
-                        <div class="item_details">
-                            <p>Banana</p>
-                            <strong>R$2,99</strong>
-                            <div class="qty">
-                                <span>-</span>
-                                <strong>1</strong>
-                                <span>+</span>
-                            </div>   
-                        </div>
-                    </div>
-                     <!-- /Item-->
-                     <!-- Item2-->
-                    <div class="cart_item">
-                        <div class="remove_items">
-                            <span>&times;</span>
-                        </div>
-                        <div class="item_img">
-                            <img src="images/cebola.jfif">
-                        </div>
-                        <div class="item_details">
-                            <p>Cebola</p>
-                            <strong>R$3,99</strong>
-                            <div class="qty">
-                                <span>-</span>
-                                <strong>1</strong>
-                                <span>+</span>
-                            </div>   
-                        </div>
-                    </div>
-                     <!-- /Item-->
-                     <!-- Item3-->
-                    <div class="cart_item">
-                        <div class="remove_items">
-                            <span>&times;</span>
-                        </div>
-                        <div class="item_img">
-                            <img src="images/alho.jfif">
-                        </div>
-                        <div class="item_details">
-                            <p>Alho</p>
-                            <strong>R$0,99</strong>
-                            <div class="qty">
-                                <span>-</span>
-                                <strong>1</strong>
-                                <span>+</span>
-                            </div>   
-                        </div>
-                    </div>
-                     <!-- /Item-->
-                     <!-- Item4-->
-                    <div class="cart_item">
-                        <div class="remove_items">
-                            <span>&times;</span>
-                        </div>
-                        <div class="item_img">
-                            <img src="images/Maça.png">
-                        </div>
-                        <div class="item_details">
-                            <p>Maça</p>
-                            <strong>R$1,99</strong>
-                            <div class="qty">
-                                <span>-</span>
-                                <strong>1</strong>
-                                <span>+</span>
-                            </div>   
-                        </div>
-                    </div>
-                     <!-- /Item-->  
-                </div>
-                <!-- Cart Actions-->
-                <div class="cart_actions">
-                    <div class="subtotal">
-                        <p>SUBTOTAL:</p>
-                        <p>$<span id="subtotal_price">3896</span></p>
-                    </div>
-                    <button>Olhar o Carrinho</button>
-                    <button>Checkout</button>
-                </div>
+        </div>
+        <div class="flex around biggap centralize">
+            <div class="flexchild">
+                <h1>DaRoça</h1>
+                <p>Um serviço inovador e barato, onde nossos clientes, em poucos passos, conseguem aproveitar de centenas de vegetais, frutas e horaliças do conforto de suas casas, com entregas semanais, quinzenais ou mensais, a escolha do cliente!</p>
+                <a href="cadastro.html" class="cadastro">Junte-se a nós!</a>
+            </div>
+            <div class="flexchild">
+                <img src="images/ecommerce1.svg" alt="Desenho de uma mulher comprando por um telefone" id="img1">
             </div>
         </div>
-        <script src="carrinho.js"></script>
+        <div class="flex around biggap centralize">
+            <div class="flexchild">
+                <img src="images/ecommerce4.svg" alt="Desenho de uma mulher comprando por um telefone" id="img1">
+            </div>
+            <div class="flexchild">
+                <h1>Qualidade E Excelência</h1>
+                <p>Temos centenas de produtos, de todas as cores e sabores! Eles chegam à sua casa muito rápido e em um estado incrível de conservação!</p>
+                <a href="#ofertas" class="cadastro">Escolha Um De Nossos Produtos!</a>
             </div>
         </div>
         <div class="flex down contrast centralize">
@@ -262,27 +174,6 @@
                 <a href="search.html" class="nodeco color">Confira Nossos Produtos</a>
             </div>
         </div>
-        <div class="flex around biggap centralize">
-            <div class="flexchild" style="color: var(--color-main-contrast);">
-                <h1>DaRoça</h1>
-                <p>Um serviço inovador e barato, onde nossos clientes, em poucos passos, conseguem aproveitar de centenas de vegetais, frutas e horaliças do conforto de suas casas, com entregas semanais, quinzenais ou mensais, a escolha do cliente!</p>
-                <a href="cadastro.html" class="cadastro">Junte-se a nós!</a>
-            </div>
-            <div class="flexchild">
-                <img src="images/ecommerce1.svg" alt="Desenho de uma mulher comprando por um telefone" id="img1">
-            </div>
-        </div>
-        <div class="flex around biggap centralize">
-            <div class="flexchild">
-                <img src="images/ecommerce4.svg" alt="Desenho de uma mulher comprando por um telefone" id="img1">
-            </div>
-            <div class="flexchild" style="color: var(--color-main-contrast);">
-                <h1>Qualidade E Excelência</h1>
-                <p>Temos centenas de produtos, de todas as cores e sabores! Eles chegam à sua casa muito rápido e em um estado incrível de conservação!</p>
-                <a href="#ofertas" class="cadastro">Escolha Um De Nossos Produtos!</a>
-            </div>
-        </div>
-        
         <footer id="footer">
             <div class="flex between">
                 <div class="flex mediumgap">
