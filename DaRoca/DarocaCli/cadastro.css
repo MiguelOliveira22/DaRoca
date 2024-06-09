@@ -1,0 +1,162 @@
+:root{
+    --color-main-backg: #1C4236;
+    --color-main-footer: #122E25;
+    --color-main-contrast: #FFFCE2;
+    --color-logo-title: #FC871A;
+    --color-enter-link: #99d4ad;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--color-main-backg);
+    color: var(--color-main-contrast);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+}
+
+footer{
+    padding: 20px 20px 10px 20px;
+    background-color: var(--color-main-footer);
+    color: var(--color-enter-link);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+#containeriscpf{
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    color: var(--color-enter-link)
+}
+
+#erro{
+    font-size: small;
+}
+
+#cpfer{
+    flex-direction: column;
+}
+
+#childcpfer{
+    margin: 2px;
+}
+
+.cpftester{
+    align-content: flex-end;
+    gap: 5px;
+}
+
+.entrar{
+    color: var(--color-enter-link);
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.pad{
+    padding: 5px 0px;
+}
+
+.biggap{
+    gap: 30px;
+}
+
+.gap{
+    gap: 5px;
+}
+
+.nodeco{
+    text-decoration: none;
+    color: var(--color-enter-link)
+}
+
+.nav{
+    align-content: center;
+    padding: 10px;
+}
+
+.nav img{
+    padding: 10px 0px;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.down{
+    flex-direction: column;
+}
+
+.mediumgap{
+    gap: 30px;
+}
+
+.bottom{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.grid{
+    display: grid;
+}
+
+.padicon{
+    padding: 7px 5px 0px 0px;
+}
+
+.input{
+    border: 0px;
+    border-radius: 15px;
+    height: 40px;
+    text-align: center;
+    color: var(--color-main-backg);
+    background-color: var(--color-main-contrast);
+    width: 100%;
+    appearance: textfield;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.bigpaddingtop{
+    height: 100px;
+}
+
+.destaque{
+    background-color: var(--color-enter-link);
+}
+
+#submit{
+    width: calc(100% + 4px);
+    margin: 10px 0px 0px 0px;
+}
+
+#content-wrap{
+    padding: 10px;
+}
+
+#decochild{
+    width: 500px;
+    height: 500px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+#info{
+    padding: 30px;
+}
+
+#info form h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo{
+    text-decoration: none;
+    color: var(--color-logo-title);
+}

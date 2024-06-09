@@ -1,0 +1,14 @@
+[
+    {"name": "Banana", "url": "banana-prata", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per kg", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Morango", "url": "morango", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$40.00", "unit": "per kg", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Laranja", "url": "laranja", "img": "./images/cebola.jfif", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Mirtilo", "url": "mirtilo", "img": "./images/alho.jfif", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Abacaxi", "url": "abacaxi", "img": "./images/banana.png", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Amora", "url": "amora", "img": "./images/cebola.jfif", "categorias": "Fruta Docê", "value": "R$2340.00", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Alface", "url": "alface", "img": "./images/banana.png", "categorias": "Vegetais Amargo", "value": "R$2340.00", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Pimentão Verde", "url": "pimentao-verde", "img": "./images/alho.jfif", "categorias": "Vegetais Agridocê", "value": "R$2340.00", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Cebola", "url": "cebola", "img": "./images/cebola.jfif", "categorias": "Hortaliças", "value": "R$51.99", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Tomate", "url": "tomate", "img": "./images/banana.png", "categorias": "Hortaliças Docê", "value": "R$20.90", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Brócolis", "url": "brocolis", "img": "./images/banana.png", "categorias": "Hortaliças Amargo", "value": "R$10.99", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"},
+    {"name": "Cabeça de Alho", "url": "alho-cabeca", "img": "./images/alho.jfif", "categorias": "Hortaliças Umami", "value": "R$2.99", "unit": "per unit", "descriptor": "Banana bem amarela muito gostosa, banana prata. Compre 10 e ganhe uma pitaya!"}
+]
