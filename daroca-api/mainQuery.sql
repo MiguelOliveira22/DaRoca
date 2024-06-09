@@ -9,4 +9,6 @@ CREATE TABLE daroca.produtos(
    PRIMARY KEY CLUSTERED (id ASC)
 );
 
+DROP TABLE daroca.produtos;
+
 insert into daroca.produtos values ('Miguel', 'images/alho.jfif', 2.99, 'per unit', 'muito bom e saboroso yummy', 1)
