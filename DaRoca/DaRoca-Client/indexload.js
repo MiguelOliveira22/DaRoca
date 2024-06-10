@@ -27,7 +27,7 @@ function LoadAll(){
 
             rotation = add;
             add = document.createElement("img");
-            add.src = "../images/" + carousel[j].imagem;
+            add.src = "../" + carousel[j].imagem;
             rotation.append(add);
 
             add = document.createElement("div");

@@ -14,8 +14,9 @@ function call(){
                 b = false;
             }
         }
+        console.log(product)
 
-        let inUse
+        let inUse;
         for(let i = 0; i < product.length; i ++){
             if(product[i].id == returner){
                 inUse = product[i];
@@ -23,6 +24,7 @@ function call(){
         }
 
         let creator = document.createElement("img");
+        console.log(inUse)
         creator.src = "../" + inUse.imagem;
         creator.id = "image-main"
         document.querySelector("#image").appendChild(creator);
@@ -57,6 +59,33 @@ function call(){
         creator.innerHTML = inUse.descricao;
         document.querySelector("#descript-container").appendChild(creator);
     });    
+}
+
+function addCart(){
+    let a = document.URL;
+    let b = true;
+    let returner = new String();
+    for(let i = 0; i < a.length; i ++){
+        if(!b){
+            returner += a[i];
+        }
+        if(a[i] == "="){
+            b = false;
+        }
+    }
+
+    let uso = window.localStorage.length;
+    let inUse = true;
+    for(let i = 0; i < uso; i ++){
+        if(localStorage.getItem(localStorage.key(i)) == returner){
+            inUse = false;
+        }
+        console.log(i + " " + window.localStorage.length)
+        console.log(window.localStorage.getItem(localStorage.key(i)));
+    }
+    if(inUse){
+        window.localStorage.setItem("cart" + uso, returner);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", call(), false)

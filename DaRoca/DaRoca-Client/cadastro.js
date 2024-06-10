@@ -47,8 +47,6 @@ function checkcpf(){
 
     console.log("Verdade");
     return 1;
-
-    rsa
 }
 
 function isActive()
@@ -74,4 +72,8 @@ function isActive()
         document.querySelector("#access").appendChild(info);
         document.querySelector("#erro").innerText = "CPF Invalido";
     }
+}
+
+function SaveCookies(){
+
 }
