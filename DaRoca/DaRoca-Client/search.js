@@ -34,7 +34,7 @@ function call(categstrings){
 
             if(string.includes(returner.toLowerCase()) && categoryIn(categstrings, product[j])){
                 let creator = document.createElement("a");
-                creator.href = "product.html/" + product[j].id;
+                creator.href = "product.html?prod=" + product[j].id;
                 creator.id = "b" + j
                 creator.className = "nodecoration flex flex-root";
                 document.querySelector("#div" + (l - 1)).appendChild(creator);
@@ -106,9 +106,7 @@ function call(categstrings){
 }
 
 function callCategs(){
-    document.querySelector("#main-content").childNodes.forEach(element => {
-        document.querySelector("#main-content").removeChild(element)
-    });
+    document.querySelector("#main-content").innerHTML = "";
 
     let categorysave = [];
     document.querySelector("#categs").childNodes.forEach(element => {
@@ -116,8 +114,7 @@ function callCategs(){
             categorysave.push(element.value);
         }
     });
-
-    call(categorysave)
+    call(categorysave);
 }
 
 function categoryIn(categories, compare){
@@ -139,4 +136,4 @@ function categoryIn(categories, compare){
     return false;
 }
 
-document.addEventListener("DOMContentLoaded", document => call(), false)
+document.addEventListener("DOMContentLoaded", call(), false)

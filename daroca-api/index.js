@@ -12,10 +12,6 @@ app.use(cors());
 ///////////////////////////
 // SQL Server configuration
 var config = {
-    user: 'BD24143',
-    password: 'Ratinho0411@',
-    server: 'regulus', // ou o endereço do servidor SQL Server
-    database: 'BD24143',
     options: {
         encrypt: false // Se você estiver usando uma conexão segura (HTTPS), defina como true
     }
@@ -72,8 +68,34 @@ app.get("/categoria/:categoria", (request, response) => {
     });
 });
 
+// Define route for fetching data from SQL Server
+app.get("/carousel", (request, response) => {
+    // Execute a SELECT query
+    new sql.Request().query("SELECT * FROM daroca.carousel", (err, result) => {
+        if (err) {
+            console.error("Error executing query:", err);
+        } else {
+            response.send(result.recordset); // Send query result as response
+            console.dir(result.recordset);
+        }
+    });
+});
+
+app.get("/carousel/:carouselNome", (request, response) => {
+    const nome = request.params.carouselNome;
+    console.log("SELECT * FROM daroca.carousel where nome LIKE '"+nome+"'");
+
+    new sql.Request().query("SELECT * FROM daroca.carousel where nome LIKE '%"+nome+"%'", (err, result) => {
+        if (err) {
+            console.error("Error executing query:", err);
+        } else {
+            response.send(result.recordset); // Send query result as response
+            console.dir(result.recordset);
+        }
+    });
+});
+
 // Start the server on port 3000
 app.listen(3000, () => {
     console.log("Listening on port 3000...");
 });
-

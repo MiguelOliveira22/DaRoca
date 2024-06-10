@@ -23,7 +23,7 @@ function call(){
         }
 
         let creator = document.createElement("img");
-        creator.src = inUse.imagem;
+        creator.src = "../" + inUse.imagem;
         creator.id = "image-main"
         document.querySelector("#image").appendChild(creator);
 
@@ -54,7 +54,7 @@ function call(){
         creator = document.createElement("p");
         creator.id = "valuefim";
         creator.className = "nomargin";
-        creator.innerHTML = inUse.descriptor;
+        creator.innerHTML = inUse.descricao;
         document.querySelector("#descript-container").appendChild(creator);
     });    
 }

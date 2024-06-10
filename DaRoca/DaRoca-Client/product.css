@@ -259,6 +259,10 @@ footer{
     font-size: large;
 }
 
+#comentarios{
+    width: 50%;
+}
+
 #search-btn:hover{
     cursor: pointer;
 }

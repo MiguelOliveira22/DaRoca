@@ -147,8 +147,9 @@ footer{
     align-self: flex-end;
 }
 
-#info{
+#info, form{
     padding: 30px;
+    width: 75%;
 }
 
 #info form h1{
