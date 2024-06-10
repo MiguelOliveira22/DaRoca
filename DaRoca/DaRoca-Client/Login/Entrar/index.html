@@ -13,20 +13,20 @@
 </head>
 <body>
     <div class="flex nav" id="logo">
-        <a href="index.html"><img src="../images/logo.png" alt="Logo DaRoça" id="logo-image" height="100"></a>
+        <a href="./../../"><img src="../images/logo.png" alt="Logo DaRoça" id="logo-image" height="100"></a>
     </div>
     <div class="flex between" id="content-wrap">
         <div class="flex" id="info">
             <form>
                 <h1>Bem Vindo De Volta</h1>
                 <div class="pad">
-                    <input type="email" placeholder="Email" class="input">
+                    <input type="email" placeholder="Email" class="input" id="username">
                 </div>
                 <div class="pad">
-                    <input type="password" placeholder="Senha" class="input">
+                    <input type="password" placeholder="Senha" class="input" id="pass">
                 </div>
                 <div>
-                    <input id="submit" type="submit" value="Confirmar" class="input destaque">
+                    <input id="submit" type="submit" value="Confirmar" class="input destaque" onclick="SaveCookies()">
                 </div>
                 <small>Esqueceu Sua Senha?<a href="suport.html" class="entrar">Mande Uma Mensagem Para O Suporte!</a></small>
             </form>

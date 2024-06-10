@@ -75,5 +75,6 @@ function isActive()
 }
 
 function SaveCookies(){
-
+    document.cookie = "username = " + document.querySelector("#username").value;
+    document.cookie = "pass = " + document.querySelector("#pass").value;
 }
