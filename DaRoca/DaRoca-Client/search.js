@@ -52,7 +52,7 @@ function call(categstrings){
                 creator = document.createElement("img");
                 creator.style.width = "160px";
                 creator.style.Height = "160px";
-                creator.src = product[j].imagem;
+                creator.src = "../" + product[j].imagem;
                 document.querySelector("#e" + j).appendChild(creator);
 
                 creator = document.createElement("h3");
@@ -92,7 +92,7 @@ function call(categstrings){
             let creator = document.createElement("img");
             creator.style.width = "350px";
             creator.style.Height = "350px";
-            creator.src = "images/perdao.svg";
+            creator.src = "../images/perdao.svg";
             creator.className = "flex around rows";
             document.querySelector("#div0").appendChild(creator);
 
@@ -116,10 +116,6 @@ function callCategs(){
             categorysave.push(element.value);
         }
     });
-    
-    for(let j = 0; j < categorysave.length; j ++){
-        console.log(categorysave);
-    }
 
     call(categorysave)
 }
@@ -132,10 +128,10 @@ function categoryIn(categories, compare){
         return true;
     }
 
-    let categoriasUsada = compare.categorias.split(" ");
+    let categoriasUsada = String(compare.categoria);
     for(let i = 0; i < categories.length; i ++){
         for(let j = 0; j < categoriasUsada.length; j ++){
-            if(categories[i] == categoriasUsada[j]){
+            if(Number(categories[i]) == Number(categoriasUsada[j])){
                 return true;
             }
         }

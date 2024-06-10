@@ -13,7 +13,7 @@ body{
     color: var(--color-main-contrast);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: larger;
+    font-size: larger !important;
 }
 
 footer{
@@ -22,7 +22,11 @@ footer{
     color: var(--color-enter-link);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: medium;
+    font-size: medium !important;
+}
+
+a{
+    font-size: large;
 }
 
 .rows{
@@ -40,13 +44,13 @@ footer{
 .cadastro{
     background-color: var(--color-main-contrast);
     text-decoration: none;
-    color: var(--color-main-backg);
+    color: var(--color-main-backg) !important;
     padding: 10px 15px;
     border-radius: 25px;
 }
 
 .entrar{
-    color: var(--color-enter-link);
+    color: var(--color-enter-link) !important;
     padding: 10px 15px;
     text-decoration: none;
 }
@@ -81,7 +85,7 @@ a:hover{
 
 .input{
     border: 0px;
-    color: var(--color-main-backg);
+    color: var(--color-main-backg) !important;
     background-color: var(--color-main-contrast);
     outline: none;
     font-family: inherit;
@@ -112,7 +116,7 @@ a:hover{
 
 .nodeco{
     text-decoration: none;
-    color: var(--color-enter-link);
+    color: var(--color-enter-link) !important;
 }
 
 .mediumgap{
@@ -235,7 +239,7 @@ a:hover{
 .cadastro{
     background-color: var(--color-main-contrast);
     text-decoration: none;
-    color: var(--color-main-backg);
+    color: var(--color-main-backg) !important;
     padding: 10px 15px;
     border-radius: 25px;
 }
@@ -243,25 +247,25 @@ a:hover{
 .cadastroanother{
     background-color: var(--color-main-chip);
     text-decoration: none;
-    color: var(--color-main-backg);
+    color: var(--color-main-backg) !important;
     padding: 10px 15px;
     border-radius: 25px;
 }
 
 .entrar{
-    color: var(--color-enter-link);
+    color: var(--color-enter-link) !important;
     padding: 10px 15px;
     text-decoration: none;
 }
 
 .nodecoration{
     text-decoration: none;
-    color: var(--color-main-backg);
+    color: var(--color-main-backg) !important;
 }
 
 .nodeco{
     text-decoration: none;
-    color: var(--color-enter-link);
+    color: var(--color-enter-link) !important;
 }
 
 .big{
@@ -282,8 +286,8 @@ a:hover{
 }
 
 .contrast{
-    background-color: var(--color-main-contrast);
-    color: var(--color-main-backg);
+    background-color: var(--color-main-contrast) !important;
+    color: var(--color-main-backg) !important;
     margin: 10px;
     border-radius: 15px;
 }
@@ -318,7 +322,11 @@ a:hover{
 }
 
 .destaque{
-    background-color: var(--color-enter-link);
+    background-color: var(--color-enter-link) !important;
+}
+
+a:hover{
+    font-weight: 500;
 }
 
 #img1{
