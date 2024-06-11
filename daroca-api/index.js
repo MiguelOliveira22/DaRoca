@@ -12,10 +12,10 @@ app.use(cors());
 ///////////////////////////
 // SQL Server configuration
 var config = {
-    user: 'BD24143',
-    password: 'Ratinho0411@',
-    server: 'regulus', // ou o endereço do servidor SQL Server
-    database: 'BD24143',
+    user: 'sa',
+    password: 'Ratinho0411',
+    server: 'localhost', // ou o endereço do servidor SQL Server
+    database: 'Teste',
     options: {
         encrypt: false // Se você estiver usando uma conexão segura (HTTPS), defina como true
     }

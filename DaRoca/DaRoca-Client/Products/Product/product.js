@@ -25,7 +25,7 @@ function call(){
 
         let creator = document.createElement("img");
         console.log(inUse)
-        creator.src = "../" + inUse.imagem;
+        creator.src = "../../../" + inUse.imagem;
         creator.id = "image-main"
         document.querySelector("#image").appendChild(creator);
 
