@@ -1,3 +1,5 @@
+CREATE SCHEMA daroca;
+
 CREATE TABLE daroca.produtos(
    id      INT  IDENTITY (1, 1) NOT NULL,
    nome    VARCHAR (30) NOT NULL,

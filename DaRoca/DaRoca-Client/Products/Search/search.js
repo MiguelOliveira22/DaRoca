@@ -3,17 +3,7 @@ function call(categstrings){
         return data.json();
     })
     .then(product => {
-        let a = document.URL;
-        let b = true;
-        let returner = new String();
-        for(let i = 0; i < a.length; i ++){
-            if(!b){
-                returner += a[i];
-            }
-            if(a[i] == "="){
-                b = false;
-            }
-        }
+        let returner = window.location.search;
         document.querySelector("#querymain").value = returner;
 
         let nProducts = product.length;

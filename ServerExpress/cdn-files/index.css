@@ -11,7 +11,7 @@ body{
     margin: 0px;
     background-color: var(--color-main-backg);
     color: var(--color-main-contrast);
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: larger !important;
 }
@@ -31,11 +31,6 @@ a{
 
 .rows{
     flex-direction: row;
-}
-
-.container{
-    width: 100vw;
-    padding: 0px;
 }
 
 .spaceseparator{

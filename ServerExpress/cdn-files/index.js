@@ -1,3 +1,19 @@
+// Open Cart
+function openCart(cart, backdrop) {
+  cart.classList.add('open')
+  backdrop.style.display = 'block'
+  backdrop.classList.add('show')
+}
+
+// Close Cart
+function closeCart(cart, backdrop) {
+  cart.classList.remove('open')
+  backdrop.classList.remove('show')
+  setTimeout(() => {
+    backdrop.style.display = 'none'
+  }, 500)
+}
+
 function Search(){
     document.querySelector("#main-query").submit();
 }
@@ -61,22 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
         addTriggers()
     }
 }, false);
-
-// Open Cart
-function openCart(cart, backdrop) {
-    cart.classList.add('open')
-    backdrop.style.display = 'block'
-    backdrop.classList.add('show')
-}
-
-// Close Cart
-function closeCart(cart, backdrop) {
-    cart.classList.remove('open')
-    backdrop.classList.remove('show')
-    setTimeout(() => {
-        backdrop.style.display = 'none'
-    }, 500)
-}
 
 function addTriggers(){
     const openBtn = document.getElementById('open_cart_btn');

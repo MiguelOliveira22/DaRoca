@@ -75,6 +75,6 @@ function isActive()
 }
 
 function SaveCookies(){
-    document.cookie = "username = " + document.querySelector("#username").value + "; SameSite=Strict; Path=/DaRoca/DaRoca-Client/";
-    document.cookie = "pass = " + document.querySelector("#pass").value + "; SameSite=Strict; Path=/DaRoca/DaRoca-Client/";
+    document.cookie = "username = " + document.querySelector("#username").value;
+    document.cookie = "pass = " + document.querySelector("#pass").value;
 }

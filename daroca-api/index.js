@@ -15,7 +15,7 @@ var config = {
     user: 'sa',
     password: 'Ratinho0411',
     server: 'localhost', // ou o endereço do servidor SQL Server
-    database: 'Teste',
+    database: 'Usable',
     options: {
         encrypt: false // Se você estiver usando uma conexão segura (HTTPS), defina como true
     }
@@ -44,11 +44,11 @@ app.get("/produtos", (request, response) => {
     });
 });
 
-app.get("/produtos/:nomeProduto", (request, response) => {
-    const nome = request.params.nomeProduto;
-    console.log("SELECT * FROM daroca.produtos where nome LIKE '"+nome+"'");
+app.get("/produtos/:idProduto", (request, response) => {
+    const id = request.params.idProduto;
+    console.log("SELECT * FROM daroca.produtos where id = " + id);
 
-    new sql.Request().query("SELECT * FROM daroca.produtos where nome LIKE '%"+nome+"%'", (err, result) => {
+    new sql.Request().query("SELECT * FROM daroca.produtos where id = " + id, (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
         } else {

@@ -7,27 +7,72 @@
     <x>0</x>
     <y>0</y>
     <width>721</width>
-    <height>303</height>
+    <height>336</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>721</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabAction">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Funções</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tabList">
+     <attribute name="title">
+      <string>Listagem</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>721</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuSair">
+    <property name="title">
+     <string>Acesso</string>
+    </property>
+    <addaction name="actionLogin"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair_2"/>
+   </widget>
+   <addaction name="menuSair"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -35,8 +80,36 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionSair"/>
   </widget>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="arquives.qrc">
+     <normaloff>:/resourcesMain/resources/CLOSE1.BMP</normaloff>:/resourcesMain/resources/CLOSE1.BMP</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="toolTip">
+    <string>Sai E Fecha O Programa</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionSair_2">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="arquives.qrc"/>
+ </resources>
  <connections/>
 </ui>

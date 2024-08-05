@@ -1,79 +1,46 @@
 function call(){
-    fetch("http://localhost:3000/produtos").then(data => {
+    let id = "1";
+    fetch("http://localhost:3000/produtos/" + id).then(data => {
         return data.json();
     })
     .then(product => {
-        let a = document.URL;
-        let b = true;
-        let returner = new String();
-        for(let i = 0; i < a.length; i ++){
-            if(!b){
-                returner += a[i];
-            }
-            if(a[i] == "="){
-                b = false;
-            }
-        }
-        console.log(product)
-
-        let inUse;
-        for(let i = 0; i < product.length; i ++){
-            if(product[i].id == returner){
-                inUse = product[i];
-            }
-        }
-
         let creator = document.createElement("img");
-        console.log(inUse)
-        creator.src = "../../../" + inUse.imagem;
-        creator.id = "image-main"
+        creator.src = "http://localhost:3300/cdn/" + product[0].imagem;
+        creator.id = "image-main";
         document.querySelector("#image").appendChild(creator);
 
         creator = document.createElement("h1");
-        creator.innerHTML = inUse.nome;
+        creator.innerHTML = product[0].nome;
         creator.className = "nomargin";
         document.querySelector("#name").appendChild(creator);
 
         let inner = document.createElement("small");
-        inner.innerHTML = inUse.unidade;
+        inner.innerHTML = product[0].unidade;
         inner.className = "nomargin";
 
         creator = document.createElement("p");
         creator.id = "valuefinal";
         creator.className = "nomargin paddown";
-        creator.innerHTML = inUse.valor.toFixed(2) + " ";
+        creator.innerHTML = product[0].valor.toFixed(2) + " ";
         document.querySelector("#valores").appendChild(creator);
         document.querySelector("#valuefinal").appendChild(inner);
 
         let quebra = inUse.categoria;
-        for(let ji = 0; ji < quebra.length; ji ++){
+        for(let i = 0; i < quebra.length; i ++){
             creator = document.createElement("span");
             creator.className = "nodeco newpad color background unbreakeable marginleft";
-            creator.innerHTML = quebra[ji];
+            creator.innerHTML = quebra[i];
             document.querySelector("#categs").appendChild(creator);
         }
 
         creator = document.createElement("p");
-        creator.id = "valuefim";
         creator.className = "nomargin";
-        creator.innerHTML = inUse.descricao;
+        creator.innerHTML = product[0].descricao;
         document.querySelector("#descript-container").appendChild(creator);
     });    
 }
 
 function addCart(){
-    let a = document.URL;
-    let b = true;
-    let returner = new String();
-    for(let i = 0; i < a.length; i ++){
-        if(!b){
-            returner += a[i];
-        }
-        if(a[i] == "="){
-            b = false;
-        }
-    }
-
     let uso = window.localStorage.length;
     let inUse = true;
     for(let i = 0; i < uso; i ++){
