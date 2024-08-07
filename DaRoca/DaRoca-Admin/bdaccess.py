@@ -8,18 +8,21 @@ class DaRoca(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.show()
+        self.
+
+    def getCursor():
+        pass
 
 def main():
     App = QApplication()
     Uso = DaRoca()
     App.exec()
-    return 0
     Acesso = bd.connect(
         driver = "{SQL Server}",
         server = "localhost",
         database = "Teste",
-        uid = "sa",
-        pwd = "";
+        uid = "",
+        pwd = ""
     )
     Cursor = Acesso.cursor()
     Cursor.execute()

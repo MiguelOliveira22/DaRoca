@@ -5,7 +5,7 @@ const express = require('express');
 const server = express();
 
 server.get("/", (request, response) => {
-    response.sendFile("C:/Users/Miguel/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/index.html", (err) => {
+    response.sendFile("C:/Users/u24143/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/index.html", (err) => {
         if (err){
             console.error("Houve um erro :(\n" + err);
         }
@@ -16,7 +16,7 @@ server.get("/", (request, response) => {
 });
 
 server.get("/login/cadastro", (request, response) => {
-    response.sendFile("C:/Users/Miguel/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/Login/Cadastro/index.html", (err) => {
+    response.sendFile("C:/Users/u24143/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/Login/Cadastro/index.html", (err) => {
         if (err){
             console.error("Houve um erro :(\n" + err);
         }
@@ -27,7 +27,7 @@ server.get("/login/cadastro", (request, response) => {
 });
 
 server.get("/login/entrar", (req, res) => {
-    res.sendFile("C:/Users/Miguel/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/Login/Entrar/index.html", (err) => {
+    res.sendFile("C:/Users/u24143/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/Login/Entrar/index.html", (err) => {
         if (err){
             console.error("Houve um erro :(\n" + err);
         }
@@ -38,7 +38,7 @@ server.get("/login/entrar", (req, res) => {
 });
 
 server.get("/produtos/:idProduto", (req, res) => {
-    res.sendFile("C:/Users/Miguel/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/Products/Product/index.html", (err) => {
+    res.sendFile("C:/Users/u24143/Documents/GitHub/DaRoca/DaRoca/DaRoca-Client/Products/Product/index.html", (err) => {
         if (err){
             console.error("Houve um erro :(\n" + err);
         }
