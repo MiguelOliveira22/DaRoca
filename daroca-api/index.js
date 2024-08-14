@@ -38,7 +38,9 @@ app.get("/produtos", (request, response) => {
     new sql.Request().query("SELECT * FROM daroca.produtos", (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
-        } else {
+            response.status(404).end();
+        }
+        else {
             response.send(result.recordset); // Send query result as response
             console.dir(result.recordset);
         }
@@ -52,7 +54,9 @@ app.get("/produtos/:idProduto", (request, response) => {
     new sql.Request().query("SELECT * FROM daroca.produtos where id = " + id, (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
-        } else {
+            response.status(404).end();
+        }
+        else {
             response.send(result.recordset); // Send query result as response
             console.dir(result.recordset);
         }
@@ -66,7 +70,9 @@ app.get("/categoria/:categoria", (request, response) => {
     new sql.Request().query("SELECT * FROM daroca.produtos where categoria="+codDaCategoria, (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
-        } else {
+            response.status(404).end();
+        }
+        else {
             response.send(result.recordset); // Send query result as response
             console.dir(result.recordset);
         }
@@ -79,7 +85,9 @@ app.get("/carousel", (request, response) => {
     new sql.Request().query("SELECT * FROM daroca.carousel", (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
-        } else {
+            response.status(404).end();
+        }
+        else {
             response.send(result.recordset); // Send query result as response
             console.dir(result.recordset);
         }
@@ -93,7 +101,9 @@ app.get("/carousel/:carouselNome", (request, response) => {
     new sql.Request().query("SELECT * FROM daroca.carousel where nome LIKE '%"+nome+"%'", (err, result) => {
         if (err) {
             console.error("Error executing query:", err);
-        } else {
+            response.status(404).end();
+        }
+        else {
             response.send(result.recordset); // Send query result as response
             console.dir(result.recordset);
         }
