@@ -48,6 +48,6 @@ server.get("/produtos/:idProduto", (req, res) => {
     });
 });
 
-server.listen(80, "127.0.0.1", () => {
+server.listen(80, "177.220.18.92", () => {
     console.log("Start");
 })

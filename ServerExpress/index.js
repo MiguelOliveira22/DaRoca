@@ -9,6 +9,7 @@ cdn.get("/:file", (request, response) => {
     response.sendFile(__dirname + "/cdn-files/" + a, (err) => {
         if (err) {
             console.error("Sumthing Bad Happened On CDN\n" + err);
+            response.status(404).end();
         }
         else {
             console.log("fine cdn");
@@ -21,6 +22,7 @@ cdn.get("/cdn/:file", (request, response) => {
     response.sendFile(__dirname + "/cdn-files/images/" + a, (err) => {
         if (err) {
             console.error("Sumthing Bad Happened On CDN\n" + err);
+            response.status(404).end();
         }
         else {
             console.log("fine cdn");
@@ -28,6 +30,6 @@ cdn.get("/cdn/:file", (request, response) => {
     });
 });
 
-cdn.listen(3300, () => {
+cdn.listen(3300, "177.220.18.92", () => {
     console.log("start cdn");
 });

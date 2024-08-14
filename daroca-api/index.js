@@ -101,6 +101,6 @@ app.get("/carousel/:carouselNome", (request, response) => {
 });
 
 // Start the server on port 3000
-app.listen(3000, () => {
+app.listen(3000, "177.220.18.92", () => {
     console.log("Listening on port 3000...");
 });
